@@ -1,90 +1,104 @@
-# #############################complete slide 1 challenge from week 4 slideshow##########
-# #############################20 minutes################################################
+# # #############################complete slide 1 challenge from week 4 slideshow##########
+# # #############################20 minutes################################################
 
-# ##########################Reviewing somethings
+# # ##########################Reviewing somethings
 
-# # indexing strings -- slide 4
-# my_text = 'this is a text string'
-# result = my_text  #get the index of the letter a
-# print(result[0:4])
-# # find the index of the word text
-# print(result.find('text'))
-# print(result[10:14])
-# print(result.find('is'))
-# print(result[5:7])
-# # reverse the string
-# # print(result[::-1])
-# # get the last letter of the string
-# print(result[-1])
-# print(result.find('string'))
-# print(result[15:-1])
-# print(result.find('hancock'))
-# # hancokc does not exist in the string
-# # it prints out -1
-# # -1 means the substring is not found
-# # index slicing is when you get a substring froma string. You can get a substring by specifying the start and the end of an index of the substring. The start index is inclusive and the end index is exclusive.
+# # # indexing strings -- slide 4
+# # my_text = 'this is a text string'
+# # result = my_text  #get the index of the letter a
+# # print(result[0:4])
+# # # find the index of the word text
+# # print(result.find('text'))
+# # print(result[10:14])
+# # print(result.find('is'))
+# # print(result[5:7])
+# # # reverse the string
+# # # print(result[::-1])
+# # # get the last letter of the string
+# # print(result[-1])
+# # print(result.find('string'))
+# # print(result[15:-1])
+# # print(result.find('hancock'))
+# # # hancokc does not exist in the string
+# # # it prints out -1
+# # # -1 means the substring is not found
+# # # index slicing is when you get a substring froma string. You can get a substring by specifying the start and the end of an index of the substring. The start index is inclusive and the end index is exclusive.
 
-# #get the index of the third letter from the end of the text
-# print(result[-3])
-# print(result[-5])
-# find the index of the letter s
+# # #get the index of the third letter from the end of the text
+# # print(result[-3])
+# # print(result[-5])
+# # find the index of the letter s
 
-###slide 5
-# string[start:stop:step]
-#example
-text = "Hello, World!"
-print(text[7:12])  # prints "World"
-text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-# Get the substring CDE and put in a variable
-substring = text.find('CDE')
-print(substring)
-substring = text[2:5]
-#get the first letter all the way to the end of the string
-print(text[0:])
-# this get the first letter to the last letter
-
-#get the first letter to the final letter and skip every 3d letter
-print(text[0::3])
-print(text[0:4])
-print(text[0:2])
-print(text[0:5])
-# Built-in methods:
-# Python has a variety of built-in methods to work with substrings.
-
-# a. str.find():
-# This method returns the lowest index of the substring if found in the given string. If it's not found, it returns -1.
+# ###slide 5
+# # string[start:stop:step]
+# #example
 # text = "Hello, World!"
-# print(text.find("World"))  # prints 7
-# print(text.find("Earth"))  # prints -1
+# print(text[7:12])  # prints "World"
+# text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# # Get the substring CDE and put in a variable
+# substring = text.find('CDE')
+# print(substring)
+# substring = text[2:5]
+# #get the first letter all the way to the end of the string
+# print(text[0:])
+# # this get the first letter to the last letter
 
-#################################Extracting Sub-Strings###################################
-# Extracting Sub-Strings Practice #1
-# Extract the first word of the following sentence using slicing, and display it on the screen:
-my_text = 'Controlling complexity is the essence of programming'
-result1 = my_text
-# Hint: "Controlling" is 11 characters long.
-print(result1[0:12])
+# #get the first letter to the final letter and skip every 3d letter
+# print(text[0::3])
+# print(text[0:4])
+# print(text[0:2])
+# print(text[0:5])
+# # Built-in methods:
+# # Python has a variety of built-in methods to work with substrings.
+
+# # a. str.find():
+# # This method returns the lowest index of the substring if found in the given string. If it's not found, it returns -1.
+# # text = "Hello, World!"
+# # print(text.find("World"))  # prints 7
+# # print(text.find("Earth"))  # prints -1
+
+# #################################Extracting Sub-Strings###################################
+# # Extracting Sub-Strings Practice #1
+# # Extract the first word of the following sentence using slicing, and display it on the screen:
+# my_text = 'Controlling complexity is the essence of programming'
+# result1 = my_text
+# # Hint: "Controlling" is 11 characters long.
+# print(result1[0:12])
 
 
-# Extracting Sub-Strings Practice #2
-# Take every third character starting from the ninth to the end of the sentence, and print the result.
-# "Never trust a computer you can't throw out a window"
+# # Extracting Sub-Strings Practice #2
+# # Take every third character starting from the ninth to the end of the sentence, and print the result.
+# # "Never trust a computer you can't throw out a window"
 
-text = "Never trust a computer you can't throw out a window"
-start_index = 8  
-substring = text[start_index:]  
-result2 = substring[::3] 
-print(result2)
+# text = "Never trust a computer you can't throw out a window"
+# start_index = 8  
+# substring = text[start_index:]  
+# result2 = substring[::3] 
+# print(result2)
 
-# Extracting Sub-Strings Practice #3
-# Reverses the position of all the characters in the following sentence and displays the result on the screen.
-# "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+# # Extracting Sub-Strings Practice #3
+# # Reverses the position of all the characters in the following sentence and displays the result on the screen.
+# # "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
 
-sentence = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-result3 = sentence[::-1]  
-print(result3)
+# sentence = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+# result3 = sentence[::-1]  
+# print(result3)
 
 ##################################### String Methods#################################
+new_text = "this is a new text tex text text text string"
+print(new_text.count("text"))
+# .count() method counts the number of times a substring appears in a string
+
+# startswith() method checks if a string starts with a specific substring
+print(new_text.startswith("this"))
+
+# endswith() method checks if a string ends with a specific substring
+print(new_text.endswith("string"))
+
+# .replace() method replaces a substring with another substring
+print(new_text.replace("text", "word"))
+
+
 # String Methods Practice #1
 #slieds 12 -16
 # Print the following text in uppercase, using the specific string method:
